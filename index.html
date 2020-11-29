@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<link type="text/css" rel="stylesheet" href="cal_style.css">
+	<script type="text/javascript" src="cal_script.js"></script>
+</head>
+
+<body>
+<form name="calculator">
+<center><br><br><br>
+	<table style="border-radius:20px;border:5px solid black;"> 
+		<tr>
+			<td colspan=4><span class="top"><h1>Tapendu's Calculator</h1></span></td>
+		</tr>
+	
+		<tr>
+			<td colspan=4><input type="text" class="textbox" name="result" value=0 readonly></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button" name="seven" value="7" onclick="num('7')"></td>
+			<td><input type="button" class="button" name="eight" value="8" onclick="num('8')"></td>
+			<td><input type="button" class="button" name="nine" value="9" onclick="num('9')"></td>
+			<td><input type="button" class="btn_opr" name="plus" value="+" onclick="num('+')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button" name="four" value="4" onclick="num('4')"></td>
+			<td><input type="button" class="button" name="five" value="5" onclick="num('5')"></td>
+			<td><input type="button" class="button" name="six" value="6" onclick="num('6')"></td>
+			<td><input type="button" class="btn_opr" name="minus" value="-" onclick="num('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button" name="one" value="1" onclick="num('1')"></td>
+			<td><input type="button" class="button" name="two" value="2" onclick="num('2')"></td>
+			<td><input type="button" class="button" name="three" value="3" onclick="num('3')"></td>
+			<td><input type="button" class="btn_opr" name="multiply" value="x" onclick="num('*')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="button" name="zero" value="0" onclick="num('0')"></td>
+			<td><input type="button" class="button" name="point" value="." onclick="num('.')"></td>
+			<td><input type="button" class="button" name="erase" value="<--" onclick="clr_bk()"></td>
+			<td><input type="button" class="btn_opr" name="divided" value="/" onclick="num('/')"></td>
+		</tr>
+		<tr>
+			<td colspan=2><input type="button" class="btn_opr" style="width:206px;" name="allclr" value="AC" onclick="clr()"></td>
+			<td colspan=2><input type="button" class="btn_opr" style="width:206px;" name="equal" value="=" onclick="solve()"></td>
+		</tr>		
+	</table>
+</center>
+</form>
+</body>
+</html>
